@@ -1,24 +1,23 @@
 *{
-    padding: 0;
-    margin: 0;
-
+    padding: 0; /* Nulstiller padding for alle elementer */
+    margin: 0;        /* Nulstiller margin for alle elementer */
 }
 *
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* Gør header til en flex-container */
+    align-items: center; /* Centrerer flex-elementerne vandret*/
+    justify-content: space-between;/* Fordeler flex-elementerne med maksimal afstand imellem dem */
    
 }
 
 .logo {
-    width: 100px;
-    margin: 5px;
+    width: 100px;/* Sætter bredden af logoet til 100 pixels */
+    margin: 5px;/* Tilføjer en margin på 5 pixels rundt om logoet */
 }
 
 .menubar {
-    display: flex;
-    justify-content: center;
+    display: flex;/* Gør menubar til en flex-container */
+    justify-content: center; /* Centrerer indholdet lodret */
     ; /* for at skubbe menubaren til højre */
     width: 33%;
 
@@ -26,49 +25,36 @@ header {
 }
 
 .menubar ul {
-    list-style-type: none;
-    display: flex;
+    list-style-type: none; /* Fjerner punkttegn fra listeelementerne */
+    display: flex;/* Gør ul til en flex-container */
     padding: 0;
     margin: 0;
-    justify-content: center;
+    justify-content: center; /* Centrerer listeelementerne*/
+    
 }
 
-/* .menubar li {
-    text-align: center;
-    display: flex;
-    margin-right: 2px;
-    height: 12px;
-    width: 60px;
-    text-align: center;
-    justify-content: center;
-} */
+
 
 .menubar li {
-    display: flex;
-    align-items: center;
-    margin: 10px;
+    display: flex; /* Gør li til en flex-container */
+    align-items: center; /* Centrerer indholdet*/
+    margin: 10px;/* Tilføjer en margin på 10 pixels rundt om hvert li */
+    
 }
-
 .menubar li a {
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    white-space: nowrap;
-    font-size: 10px;
+    text-align: center;               /* Centrerer teksten i anker-elementerne */
+    padding: 10px;                    /* Tilføjer 10 pixels padding omkring anker-elementerne */
+    text-decoration: none;            /* Fjerner understregning fra links */
+    color: white;                     /* Sætter tekstfarven til hvid */
+    white-space: nowrap;              /* Forhindrer tekstombrydning */
+    font-size: 10px;                  /* Sætter skrifttypestørrelsen til 10 pixels */
 }
 
-/* .menubar li a {
-    text-decoration: none;
-    color: white;
-    font-size: 8px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} */
 
 a:hover{
     color: gray;
 }
-
+/*ændre tekstfarverne*/
 .gron {
     background-color: #DECA7A;
 }
@@ -77,16 +63,6 @@ a:hover{
     background-color: #EDAB78;
 }
 
-/* .Profilbillede1 img{
-   width: 143px;
-   height: auto;
-   border-radius: 20%;
-   display: block;
-   margin: 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-} */
 
 .loginbillede{
     width: 143px;
@@ -94,35 +70,34 @@ a:hover{
 
 }
 
-.form1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    /* behavior: alternate; */
-    width: 100%;;
+.form1 {
+    display: flex;                    /* Gør form1 til en flex-container */
+    flex-direction: column;           /* Arrangerer børnene i en kolonne */
+    align-items: center;              /* Centrerer indholdet vandret */
+    justify-content: center;          /* Centrerer indholdet lodoret */
+    margin-bottom: 20px;              /* Tilføjer en margin i bunden på 20 pixels */
+    width: 100%;                      /* Sætter bredden til 100% af containerens bredde */
+    /* behavior: alternate; */        /* Kommentarlinje, ignoreres af browseren */
 }
 
 .contact-form {
-    width: 100%;
-    margin: 16px;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
+    width: 100%;                      /* Sætter bredden af contact-form til 100% */
+    margin: 16px;                     /* Tilføjer en margin på 16 pixels rundt om contact-form */
+    display: flex;                    /* Gør contact-form til en flex-container */
+    flex-direction: column;           /* Arrangerer børnene i en kolonne */
+    align-items: center;              /* Centrerer indholdet vandret */
+    /* justify-content: center; */    /* Kommentarlinje, ignoreres af browseren */
 }
 
 .contact-form input {
     width: 300px;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+main {
+    display: flex;                    /* Gør main til en flex-container */
+    flex-direction: column;           /* Arrangerer børnene i en kolonne */
+    justify-content: center;          /* Centrerer indholdet lodret*/
+    align-items: center;              /* Centrerer indholdet vandret */
 }
 
 @media (min-width: 800px){
