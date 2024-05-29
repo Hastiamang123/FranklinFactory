@@ -1,0 +1,177 @@
+
+/*Hasti*/
+*{
+    padding: 0; /* Nulstiller padding for alle elementer */
+    margin: 0;        /* Nulstiller margin for alle elementer */
+}
+body{
+    background-color: #0D0D0C;
+
+}
+h3{
+    color: white;
+}
+*
+header {
+    display: flex; /* Gør header til en flex-container */
+    align-items: center; /* Centrerer flex-elementerne vandret*/
+    justify-content: space-between;/* Fordeler flex-elementerne med maksimal afstand imellem dem */
+   
+}
+
+.logo {
+    width: 100px;/* Sætter bredden af logoet til 100 pixels */
+    margin: 5px;/* Tilføjer en margin på 5 pixels rundt om logoet */
+}
+
+.menubar {
+    display: flex;/* Gør menubar til en flex-container */
+    justify-content: center; /* Centrerer indholdet lodret */
+    ; /* for at skubbe menubaren til højre */
+    width: 33%;
+
+
+}
+
+.menubar ul {
+    list-style-type: none; /* Fjerner punkttegn fra listeelementerne */
+    display: flex;/* Gør ul til en flex-container */
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Centrerer listeelementerne*/
+    
+}
+
+
+
+.menubar li {
+    display: flex; /* Gør li til en flex-container */
+    align-items: center; /* Centrerer indholdet*/
+    margin: 10px;/* Tilføjer en margin på 10 pixels rundt om hvert li */
+    
+}
+.menubar li a {
+    text-align: center;               /* Centrerer teksten i anker-elementerne */
+    padding: 10px;                    /* Tilføjer 10 pixels padding omkring anker-elementerne */
+    text-decoration: none;            /* Fjerner understregning fra links */
+    color: white;                   /* Sætter tekstfarven til hvid */
+    white-space: nowrap;              /* Forhindrer tekstombrydning */
+    font-size: 10px;                  /* Sætter skrifttypestørrelsen til 10 pixels */
+}
+
+
+a:hover{
+    color: gray;
+}
+/*ændre tekstfarverne*/
+.gron {
+    background-color: #DECA7A;
+}
+
+.orange {
+    background-color: #EDAB78;
+}
+
+
+.loginbillede{
+    width: 143px;
+    height: 144px;
+
+}
+
+.form1 {
+    display: flex;                    /* Gør form1 til en flex-container */
+    flex-direction: column;           /* Arrangerer børnene i en kolonne */
+    align-items: center;              /* Centrerer indholdet vandret */
+    justify-content: center;          /* Centrerer indholdet lodoret */
+    margin-bottom: 20px;              /* Tilføjer en margin i bunden på 20 pixels */
+    width: 100%;                      /* Sætter bredden til 100% af containerens bredde */
+    color: white;                   /* Ændre farven på teksten*/
+    behavior: alternate;           /* Kommentarlinje, ignoreres af browseren */
+}
+
+.contact-form {
+    width: 100%;                      /* Sætter bredden af contact-form til 100% */
+    margin: 16px;                     /* Tilføjer en margin på 16 pixels rundt om contact-form */
+    display: flex;                    /* Gør contact-form til en flex-container */
+    flex-direction: column;           /* Arrangerer børnene i en kolonne */
+    align-items: center;              /* Centrerer indholdet vandret */
+    
+}
+
+.contact-form input {
+    width: 300px;
+}
+
+main {
+    display: flex;                    /* Gør main til en flex-container */
+    flex-direction: column;           /* Arrangerer børnene i en kolonne */
+    justify-content: center;          /* Centrerer indholdet lodret*/
+    align-items: center;              /* Centrerer indholdet vandret */
+}
+/*Hasti*
+/*Stina*/
+
+footer {
+    background-color: #EDAB78; /* footer background color*/
+    color: black; /* text color*/
+    padding: 20px; /* size*/
+    text-align: right; /* text posistion*/
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: right;
+    gap: 10px;
+}
+
+.contact-item i {
+    font-size: 24px;
+}
+
+.contact-item a, .contact-item address {
+    color: white;
+    text-decoration: none;
+
+}
+
+.contact-item a:hover, .contact-item address:hover {
+    text-decoration: underline;
+} 
+/*Stina*/
+
+@media (min-width: 800px){
+    .logo {
+        width: 400px;
+    }
+
+    .gron {
+        padding: 5px 40px;
+    }
+
+    .orange {
+        padding: 5px 40px;
+    }
+
+    .menubar li a {
+        font-size: 16px;
+    }
+
+    .contact-form input {
+        width: 500px;
+    }
+}
+    .Profilbillede {
+        width: 10%;
+        height: auto;
+    }
