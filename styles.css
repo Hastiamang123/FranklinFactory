@@ -1,6 +1,15 @@
+
+/*Hasti*/
 *{
     padding: 0; /* Nulstiller padding for alle elementer */
     margin: 0;        /* Nulstiller margin for alle elementer */
+}
+body{
+    background-color: #0D0D0C;
+
+}
+h3{
+    color: white;
 }
 *
 header {
@@ -45,7 +54,7 @@ header {
     text-align: center;               /* Centrerer teksten i anker-elementerne */
     padding: 10px;                    /* Tilføjer 10 pixels padding omkring anker-elementerne */
     text-decoration: none;            /* Fjerner understregning fra links */
-    color: white;                     /* Sætter tekstfarven til hvid */
+    color: white;                   /* Sætter tekstfarven til hvid */
     white-space: nowrap;              /* Forhindrer tekstombrydning */
     font-size: 10px;                  /* Sætter skrifttypestørrelsen til 10 pixels */
 }
@@ -77,7 +86,8 @@ a:hover{
     justify-content: center;          /* Centrerer indholdet lodoret */
     margin-bottom: 20px;              /* Tilføjer en margin i bunden på 20 pixels */
     width: 100%;                      /* Sætter bredden til 100% af containerens bredde */
-    /* behavior: alternate; */        /* Kommentarlinje, ignoreres af browseren */
+    color: white;                   /* Ændre farven på teksten*/
+    behavior: alternate;           /* Kommentarlinje, ignoreres af browseren */
 }
 
 .contact-form {
@@ -86,7 +96,7 @@ a:hover{
     display: flex;                    /* Gør contact-form til en flex-container */
     flex-direction: column;           /* Arrangerer børnene i en kolonne */
     align-items: center;              /* Centrerer indholdet vandret */
-    /* justify-content: center; */    /* Kommentarlinje, ignoreres af browseren */
+    
 }
 
 .contact-form input {
@@ -99,10 +109,50 @@ main {
     justify-content: center;          /* Centrerer indholdet lodret*/
     align-items: center;              /* Centrerer indholdet vandret */
 }
+/*Hasti*
+/*Stina*/
+
+footer {
+    background-color: #EDAB78; /* footer background color*/
+    color: black; /* text color*/
+    padding: 20px; /* size*/
+    text-align: right; /* text posistion*/
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: right;
+    gap: 10px;
+}
+
+.contact-item i {
+    font-size: 24px;
+}
+
+.contact-item a, .contact-item address {
+    color: white;
+    text-decoration: none;
+
+}
+
+.contact-item a:hover, .contact-item address:hover {
+    text-decoration: underline;
+} 
+/*Stina*/
 
 @media (min-width: 800px){
     .logo {
-        width: 180px;
+        width: 400px;
     }
 
     .gron {
@@ -121,9 +171,7 @@ main {
         width: 500px;
     }
 }
-
-@media (min-width: 1100px){
     .Profilbillede {
-        width: 70px;
+        width: 10%;
+        height: auto;
     }
-}
